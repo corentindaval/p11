@@ -421,11 +421,22 @@ figure p{
     }
 
     footer{
-        position:absolute;
-        bottom:-270%;
+        position:sticky;
+        bottom:0px;
+        left:0px;
         background-color:black;
+        width:110%;
+        height:600px;
+        margin-left:0px;
 
+    }
 
+    p{
+        font-size:40px;
+    }
+
+    li {
+        font-size: 40px;
     }
 
 #part1{
@@ -485,8 +496,64 @@ figure p{
         font-size: 40px;
     }
 
+    figure{
+        width:500px;
+        height:500px;
+        margin-bottom:50px;
+        margin-left:20%;
+       
+    }
 
+    .img_carte_logement {
+        width: 500px;
+        height: 500px;
+    }
 
+    .txt_logement {
+        font-size: 40px;
+    }
 
+    #selection_location {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #h1404{
+        margin-top:20%;
+    }
+
+    #txt404{
+        font-size:40px;
+        margin-top:40%;
+        margin-bottom:40%;
+    }
+
+    #link404{
+        font-size:40px;
+    }
+
+    #Fiabilite{
+        margin-top:20%;
+        margin-bottom:20%;
+    }
+
+    #Respect {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    #Service {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    #Securite {
+        margin-top: 20%;
+        margin-bottom: 40%;
+    }
+
+    #equipements{
+        margin-bottom:45%;
+    }
 
 }
