@@ -32,9 +32,9 @@ function Info_logement() {
 
     function categories(logement) {
         return (
-            logement.tags.map((tag) => {
+            logement.tags.map((tag,index) => {
                 return(
-                    <span className="tags"><p>{tag}</p></span>
+                    <span className="tags" key={index}><p>{tag}</p></span>
                     )
             })
         )
@@ -131,17 +131,17 @@ function Info_logement() {
         return (
             <div>
                 {
-                    logement_select.map((logement) => {
+                    logement_select.map((logement,index) => {
                         console.log(logement);
                         return (
-                            <div id="logement">
+                            <div id="logement" key={index}>
                                 <Carrousel_image liste_image={logement.pictures} />
                                 <div id="sous_partie">
                                     <div id="part1">
                                         <div id="partie_presentation">
                                             <h1 id="titre_logement">{logement.title}</h1>
                                             <p id="emplacement_logement">{logement.location}</p>
-                                            <div id="categorie_du_logement">
+                                            <div id="categorie_du_logement" >
                                                 {categories(logement)}
                                             </div>
                                         </div>
