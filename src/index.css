@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,6 +15,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+ul{
+    list-style:none;
+}
 
 nav{
     position:relative;
@@ -20,6 +26,9 @@ nav{
     
 }
 
+#accueil{
+    text-decoration:underline;
+}
 
 
 .link_nav{
@@ -383,7 +392,7 @@ figure p{
 #precedent{
     background-color:none;
     opacity:0.2;
-    color:black;
+    color:goldenrod;
     font-size:30px;
     position:relative;
     right:-95px;
@@ -392,7 +401,7 @@ figure p{
 #suivant {
     background-color: none;
     opacity: 0.2;
-    color: black;
+    color: goldenrod;
     font-size: 30px;
     position: relative;
     left: -118px;
@@ -400,6 +409,7 @@ figure p{
 
 #num_img {
     position: relative;
+    color: goldenrod;
     top: 450px;
     left: -550px;
     opacity: 0.3;
@@ -414,21 +424,41 @@ figure p{
 
     }
 
+
     nav {
         position: relative;
-        right: -50%;
+        right: -15%;
+        top:40px;
         padding: 20px;
     }
 
-    footer{
-        position:sticky;
-        bottom:0px;
-        left:0px;
-        background-color:black;
-        width:110%;
-        height:600px;
-        margin-left:0px;
+    .link_nav {
+        margin:60px;
+    }
+    #equipements {
+       max-height: 100px;
+    }
 
+    footer {
+        position: sticky;
+        bottom:0px;
+        left: 0px;
+        background-color: black;
+        width: 110%;
+        height: 600px;
+        margin-left: 0px;
+    }
+    #img_header{
+        width:40%;
+        height:100%;
+    }
+
+    footer img {
+        position: relative;
+        left: -800px;
+        top:-100px;
+        height: 600px;
+        width: 200%;
     }
 
     p{
@@ -438,12 +468,30 @@ figure p{
     li {
         font-size: 40px;
     }
+    .carrousel_image{
+        position:relative;
+        left:-80px;
+    }
 
-#part1{
-    display:flex;
-    flex-direction:column;
-    font-size:40px;
-}
+    #titre_logement{
+        font-size:80px;
+    }
+    #emplacement_logement{
+        font-size:40px;
+        font-weight:bold;
+    }
+  
+
+    #img_actuel {
+        height: 800px;
+        width: 1000px;
+    }
+
+    #part1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+    }
 
     #partie_note_et_proprietaire {
         display: flex;
@@ -459,7 +507,7 @@ figure p{
     #identiter_proprio {
         position:relative;
         top:-30px;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .tags {
@@ -487,13 +535,23 @@ figure p{
         height: 80px;
         font-size:40px;
     }
-
-    #precedent{
-        font-size:40px;
+    #num_img{
+        position:relative;
+        font-size:60px;
+        top:740px;
+    }
+    #precedent {
+        font-size: 80px;
+        position: relative;
+        left: 160px;
+        height: 800px;
     }
 
     #suivant {
-        font-size: 40px;
+        font-size: 80px;
+        position:relative;
+        left:-220px;
+        height:800px;
     }
 
     figure{
@@ -570,6 +628,20 @@ figure p{
 
     #equipements{
         margin-bottom:45%;
+    }
+
+    #identiter{
+        position:relative;
+        left:800px;
+    }
+
+    #etoiles {
+        position: relative;
+        right: 900px;
+    }
+
+    .ensemble_collapse{
+        width:1400px;
     }
 
 }

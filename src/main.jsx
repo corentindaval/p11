@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import App from './App.jsx'
 import Page_erreur from './pages/erreur.jsx'
 import Page_info_logement from './pages/infos_logement.jsx'
+
 import Page_a_propos from './pages/a_propos.jsx'
 import './index.css'
 

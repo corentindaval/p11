@@ -4,7 +4,7 @@
 function Footer() {
     return (
         <footer>
-            <img src={footer_desktop }></img>
+            <img id="img_footer" src={footer_desktop }></img>
         </footer>
         )
 }

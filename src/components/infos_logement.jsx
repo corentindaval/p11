@@ -1,7 +1,6 @@
 ﻿import { useParams } from 'react-router-dom'
 import listlogement from '../assets/logements.json'
-import etoilepleine from '../assets/etoile_pleine.png'
-import etoilevide from '../assets/etoile_vide.png'
+import Etoile from "../components/etoile.jsx"
 import Collapse from './collapse'
 import Carrousel_image from './carrousel_image'
 import Partie_erreur from '../components/erreur.jsx'
@@ -62,69 +61,6 @@ function Info_logement() {
         )
     }
 
-    function etoiles(nbetoiles) {
-        if (nbetoiles == 0) {
-            return (
-                <span id="etoiles">
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                </span>
-            )
-        } else if (nbetoiles == 1) {
-            return (
-                <span id="etoiles">
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                </span>
-            )
-        } else if (nbetoiles == 2) {
-            return (
-                <span id="etoiles">
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                    <img className="etoile" src={etoilevide} />
-                </span>
-            )
-        } else if (nbetoiles == 3) {
-            return (
-                <span id="etoiles">
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilevide}/>
-                    <img className="etoile" src={etoilevide} />
-                </span>
-            )
-        } else if (nbetoiles == 4) {
-            return (
-                <span id="etoiles">
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilevide} />
-                </span>
-            )
-        } else if (nbetoiles == 5) {
-            return (
-                <span id="etoiles">
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                    <img className="etoile" src={etoilepleine} />
-                </span>
-            )
-        }
-    }
     
     if (verif_id() == true) {
         console.log(logement_select);
@@ -150,20 +86,17 @@ function Info_logement() {
                                                 <p id="identiter_proprio">{logement.host.name}</p>
                                                 <img id="img_proprio" src={logement.host.picture} />
                                             </div>
-                                            {etoiles(logement.rating)}
+                                            <Etoile nbetoiles={logement.rating} />
                                         </div>
                                     </div>
                                     <div id="partie_description_equipement">
 
                                         <div id="description">
                                             <Collapse description={logement.description} titre="description" liste={false} nom_compo="txt_description" nom_contenu="contenu_description" />
-                                            {//<p>{logement.description}</p>
-                                            }
+                                           
                                         </div>
                                         <div id="equipements">
                                             <Collapse description={logement.equipments} titre="equipement" liste={true} nom_compo="txt_equipement" nom_contenu="contenu_equipement" />
-                                            {/*     <button id="interaction_equipement" onClick={maj_equipement}>equipements</button>
-                                {equipements(logement)}*/}
                                         </div>
                                     </div>
                                 </div>
