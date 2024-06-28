@@ -417,11 +417,12 @@ figure p{
 
 
 @media (max-width: 600px) {
-
-    header{
-  font-size:50px;
-
-
+    #select_log{
+        position:relative;
+        left:-40px;
+    }
+    header {
+        font-size: 50px;
     }
 
 

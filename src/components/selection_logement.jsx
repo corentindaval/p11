@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Selection_logement() {
   
     return (
-        <div>
+        <div id="select_log">
 
 
             <div id="baniere">
