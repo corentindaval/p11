@@ -389,19 +389,23 @@ figure p{
     margin-bottom:200px;
 }
 
-#precedent{
-    background-color:none;
-    opacity:0.2;
-    color:goldenrod;
-    font-size:30px;
-    position:relative;
-    right:-95px;
+#precedent {
+    background-color: none;
+    border-color: white;
+    border: none;
+    opacity: 0.4;
+    color: navajowhite;
+    font-size: 30px;
+    position: relative;
+    right: -95px;
 }
 
 #suivant {
     background-color: none;
-    opacity: 0.2;
-    color: goldenrod;
+    border: none;
+    border-color:white;
+    opacity: 0.4;
+    color: navajowhite;
     font-size: 30px;
     position: relative;
     left: -118px;
@@ -551,7 +555,7 @@ figure p{
     #suivant {
         font-size: 80px;
         position:relative;
-        left:-220px;
+        left:-260px;
         height:800px;
     }
 
